@@ -1,5 +1,5 @@
-import Footer from "../../Components/Footer";
-import Header from "../../Components/Header";
+
+import Header from "../../Component/Header/Header";
 import sarah from "../../assets/sarah.jpg";
 
 const About = () => {
@@ -23,7 +23,7 @@ const About = () => {
         </div>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

@@ -1,11 +1,11 @@
-import Footer from "../../Components/Footer";
-import Header from "../../Components/Header";
+
+import Header from '../../Component/Header/Header';
 import styleCar from '../../assets/StyleCar.jpg'
 
 const Blog = () => {
   return (
     <>
-      <Header />
+      <Header/>
       <div className="Blog">
         <div className="heading">Our Blog</div>
         <div className="Blog-Container">
@@ -60,7 +60,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

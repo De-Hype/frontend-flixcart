@@ -1,0 +1,45 @@
+.Hero{
+    background: url('./assets/hero_three.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 0 0 35px 35px;
+}
+.Main_Hero{
+    height: 530px;
+    width: 700px;
+    padding: 4.3rem 3rem; 
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+    /* background: red;  */
+}
+.hero-main-heading{
+    color: #07484A;
+font-size: 64px;
+font-family: Playfair Display;
+font-weight: 700;
+word-wrap: break-word;
+}
+.hero-main-paragraph{
+    color: #07484A;
+    font-family: Open Sans;
+    font-weight: 400;
+    word-wrap: break-word;
+    font-size: 24px;
+}
+
+#Hero-btn{
+    color: #FDFBF8;
+    font-family: Open Sans;
+    font-weight: 700;
+    word-wrap: break-word;
+    font-size: 24px;
+    padding: 15px 30px; 
+    background: #70908B; 
+    border-radius: 10px; 
+    outline: none;
+    border: none;
+}

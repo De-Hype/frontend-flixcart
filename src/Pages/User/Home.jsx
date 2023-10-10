@@ -1,23 +1,17 @@
-import Header from "../../Components/Header";
-import Footer from "../../Components/Footer";
-import Hero from "../../Components/Hero";
-import Partner from "../../Components/Partner";
-import Store from "../../Components/Store";
-import Contact from "../../Components/Contact";
-import Testimony from "../../Components/Testimony";
-import About from "../../Components/About";
+
+import Benefit from "../../Component/Benefits/Benefit";
+import Category from "../../Component/Category/Category";
+import Hero from "../../Component/Hero/Hero";
+import PopularProduct from "../../Component/PopularProduct/PopularProduct";
+
 
 const Home = () => {
   return (
     <div className="Home">
-      <Header />
       <Hero />
-      <About />
-      <Testimony />
-      <Store />
-      <Partner />
-      <Contact />
-      <Footer />
+      <Category/>
+      <PopularProduct/>
+      <Benefit/>
     </div>
   );
 };

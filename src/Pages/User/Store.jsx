@@ -1,15 +1,13 @@
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import Footer from "../../Components/Footer";
-import Filter from "../../Components/Shop/Filter";
-import Product from "../../Components/Shop/Product";
-import HeaderOnShop from "../../Components/Shop/HeaderOnShop";
+
 import ReactPaginate from "react-paginate";
+import Header from "../../Component/Header/Header";
 
 const Store = () => {
   return (
     <>
-      <HeaderOnShop />
+      <Header />
       <div className="Store-Page">
         <div className="top">
           <div className="upper">
@@ -25,8 +23,8 @@ const Store = () => {
           <h4 className="explore-product">Explore Our Products</h4>
         </div>
         <div className="container">
-          <Filter />
-          <Product />
+          {/* <Filter />
+          <Product /> */}
         </div>
         <div className="pagination">
           <ReactPaginate
@@ -44,7 +42,7 @@ const Store = () => {
           />
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
