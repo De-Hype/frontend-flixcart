@@ -1,0 +1,79 @@
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .9rem 1.3rem ;
+}
+.Header .logo{
+    display: flex;
+    align-items: center;
+}
+.header-icon{
+    font-size: 30px;
+    background-color: rgb(85, 1, 85);
+    color: white; 
+    border-radius: 30%;
+}
+.logo-text{
+    font-weight: 800;
+    font-size: 18px;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search-bar .icon{
+    position: absolute;
+    right: 6px;
+    font-size: 19px;
+    cursor: pointer;
+}
+#search-bar-input{
+    font-size: 17px;
+    padding: .4rem 2rem .4rem .8rem;
+    width: 30rem; 
+    outline: none;
+    border: .1px solid rgb(191, 189, 191);
+    box-shadow: 2px 0px 5px black;
+    border-radius: 10px
+}
+.user-account-header{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+.header-wrapper{
+    position: relative;
+}
+.header-wrapper span{
+    position: absolute;
+    left: 30%;
+    bottom: 3px;
+    background-color: rgb(233, 21, 233);
+    padding: 4px;
+    border-radius: 30%;  
+}
+.header-wrapper .icon{
+    font-size: 42px;
+    width: 100%;
+}
+.header-auth{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.header-auth .icon{
+    font-size: 17px;
+}
+.header-auth-hello-text{
+    font-size: 14px;
+}
+.header-auth-hello-text .link{
+    text-decoration: none;
+    
+}
+.header-auth-sign-in{
+    font-weight: 600;
+}

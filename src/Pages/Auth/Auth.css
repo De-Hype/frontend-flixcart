@@ -1,0 +1,84 @@
+.Authentication{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    width: 100svw;
+}
+.Auth-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Auth-container .heading{
+    font-size: 19px;
+}
+.Auth-container .auth-link{
+    text-decoration: none;
+    color: black;
+}
+/* .Auth-container .wrapper .auth-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .9rem;
+} */
+.Auth-container .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50svw;
+    gap: .9rem;
+    margin-top: 2rem;
+}
+.auth-form .form-input{
+    width: 100%;
+    padding: 8px 10px;
+    outline: none;
+}
+#form-submit{
+    width: 100%;
+    padding: 12px 10px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    background: rgb(96, 2, 96);
+    color: white;
+}
+.Auth-container .wrapper .auth-ouath, .auth-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.2rem;
+}
+.wrapper .or{
+    font-size: 15px;
+    color: rgb(165, 164, 164);
+}
+.Auth-container .wrapper .auth-ouath button{
+    width: 100%;
+    padding: 7px;
+    /* background: rgb(229, 130, 130); */
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    background: white;
+    border: 1px solid black;
+}
+.auth-icons{
+    font-size: 20px;
+    color: blue;
+}

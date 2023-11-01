@@ -1,0 +1,64 @@
+.Footer{
+    padding: 4rem 1.4rem;  
+    background: rgba(221, 91, 210, .9);
+    display: flex;
+    flex-direction: column;
+}
+.footer-top{
+    display: flex;
+}
+.Footer .footer-top .logo{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    text-decoration: none;
+}
+.footer-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /* background: blue; */
+}
+.footer-container .box-one{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+.navigation-heading{
+    color: rgb(63, 63, 63);
+    font-weight: 700;
+    font-size: 15px;
+}
+.footer-container .box-one .footer-navigations{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+.footer-links{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+.Footer .bottom{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.site-owner{
+    font-size: 15px;
+    color: rgb(17, 17, 17);
+}
+.site-owner span{
+    color: rgb(77, 77, 77);
+}
+.bottom .socials{
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+}
+.bottom .socials .social-icon{
+    font-size: 18px;
+    color: black;
+}

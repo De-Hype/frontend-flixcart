@@ -1,0 +1,40 @@
+.Shop{
+    padding: 3rem 1.5rem;
+}
+.Shop-wrapper{
+    display: flex;
+    gap: .6rem;
+}
+.ShopItems{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: .9rem;
+}
+.ShopItems .box{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid rgb(144, 143, 143);
+    cursor: pointer;
+    gap: .5rem;
+}
+.ShopItems .box img{
+    height: 150px;
+}
+.ShopItems .box .about-item{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+.ShopItems .box .about-item .last{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.paginate{
+
+    margin-top: 1.2rem;
+}

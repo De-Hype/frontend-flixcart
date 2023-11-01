@@ -1,0 +1,28 @@
+.Newsletter{
+    padding: 4rem 1.4rem;
+    background: rgb(232, 231, 231);
+}
+.Newsletter .Container{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: center;
+}
+#newsletter-input{
+    outline: none;
+    border: .9px solid rgb(186, 52, 186);
+    background-color: white;
+    font-size: 16.3px;
+    padding: 6px 9px;
+    min-width: 20rem;
+}
+#newsletter-btn{
+    outline: none;
+    font-size: 16.3px;
+    padding: 7px 9px;
+    border: none;
+    background: rgb(85, 1, 85);
+    color: white;
+    letter-spacing: .7px;
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.FirstHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(85, 1, 85);
+    color: white;
+    padding: 1rem 1.3rem ;
+}
+.left span{
+    font-weight: 700;
+}
+.FirstHeader > .right{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.FirstHeader .right .links{
+    color: white;
+    text-decoration: none;
+}

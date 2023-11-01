@@ -1,0 +1,126 @@
+.FeaturedProduct{
+    padding: 1.3rem 1.2rem ;
+}
+.heading{
+    font-size: 19px;
+    font-weight: 800;
+}
+.FeaturedProductTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FeaturedProductTop > .right-links{
+    text-decoration: none;
+    color: rgb(85, 1, 85);
+    padding: 4px 6px;
+    font-size: 15px;
+    background-color: rgb(242, 166, 242);
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    border-radius: 10px;
+}
+
+.FeaturedProductBottom{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 1.2rem;
+    gap: .4rem;
+}
+
+
+.FeaturedProductBottom .box{
+    padding: 10px;
+    width: 290px;
+    position: relative;
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    gap: .8rem;
+}
+.FeaturedProductBottom .box span{
+    position: absolute;
+    background-color: blue;
+    display: flex;
+    padding: 4px 7px;
+    top: 20px;
+}
+.FeaturedProductBottom .box img{
+    width: 100%;
+    min-height: 60%;
+}
+.FeaturedProductBottom .box .about-item{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    min-height: 100px;
+}
+.about-item .about-item-name{
+    font-size: 17px;
+    font-weight: 600;
+}
+.about-item .about-item-price-stock{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-item .price-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .9rem;   
+}
+.FeaturedProductBottom .box .last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-item .about-item-price-stock .price-section .old-price{
+    font-size: 15px;
+    font-weight: 500;
+    color: grey;
+    text-decoration: line-through;
+}
+.about-item .about-item-price-stock .price-section .new-price{
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(85, 1, 85);
+}
+.about-item .about-item-price-stock .instock{
+    font-size: 15px;
+    font-weight: 500;
+    background: rgb(187, 227, 187);
+    color: green;
+    padding: 4px 7px;
+    border-radius: 7px;
+}
+.about-item .about-item-price-stock .outstock{
+    font-size: 15px;
+    font-weight: 500;
+    background: rgb(232, 175, 175);
+    color: red;
+    padding: 3px 7px;
+    border-radius: 7px;
+}
+.last .product-icon{
+    color: rgb(85, 1, 85);
+    font-size: 25px;
+    padding: 2px;
+    background: rgb(242, 166, 242);
+}
+.last .last-box-prop{
+    color: rgb(85, 1, 85);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 2px;
+    background: rgb(242, 166, 242); 
+    display: flex;
+    gap: .6rem;
+    align-items: center;  
+    cursor: pointer;
+}
+.last .last-box-prop .last-box-prop-icon{
+    font-size: 25px;
+}

@@ -1,0 +1,76 @@
+.Empty_Cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    gap: 1.2rem;
+}
+.Shopping-heading{
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(31, 3, 31);
+}
+.cart-paragraph{
+    font-size: 16px;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    text-decoration: none;
+    color: rgb(31, 3, 31);
+}
+ .wrapper .icon{
+    font-size: 20px;
+}
+
+.Full_Cart{
+    padding: 2.1rem 1.5rem; 
+}
+.Full_Cart .Shopping-heading{
+    text-align: center;
+}
+.clear-cart{
+    padding: 8px 15px;
+    cursor: pointer;
+    border: .3px solid rgb(209, 207, 207);
+    outline: none;
+    font-size: 17px;
+}
+.right{
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+.right .subtotal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.right .paragraph{
+    font-size: 14px;
+}
+.call-to-action{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.call-to-action .proceed{
+    padding: 8px;
+    outline: none;
+    border: none;
+    background: rgb(89, 42, 89);
+    color: white;
+    font-weight: 800;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+.Full_Cart .below-table{
+    display: flex;
+    justify-content: space-between;
+}
