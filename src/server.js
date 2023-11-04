@@ -1,1 +1,1 @@
-export const Backend_URL = 'http://localhost:7070/api'
+export const Backend_URL = 'https://energetic-tan-alligator.cyclic.app'

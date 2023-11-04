@@ -6,9 +6,9 @@ const Banner = () => {
     <div className="Banner">
       <div className="top">
         <Link className="banner-links" to="/">Home</Link>
-        <Link className="banner-links" to="/">Shop</Link>
-        <Link className="banner-links" to="/">About Us</Link>
-        <Link className="banner-links" to="/">Blog</Link>
+        <Link className="banner-links" to="/shop">Shop</Link>
+        <Link className="banner-links" to="/about-us">About Us</Link>
+        <Link className="banner-links" to="/blog">Blog</Link>
         <Link className="banner-links" to="/">Contact Us</Link>
       </div>
       <div className="img-wrapper">

@@ -5,6 +5,7 @@ import "./SearchResults.css";
 import { Link } from "react-router-dom";
 import image_One from "../../assets/image_One.jpg";
 
+
 const SearchResults = () => {
   return (
     <div className="search-results">
@@ -12,7 +13,7 @@ const SearchResults = () => {
 
       <div className="SearchResults">
         <h4 className="found-results">
-          Search results for '<span>Wrist Watch</span>'{" "}
+          Search results for '<span>Wrist Watch</span>'
         </h4>
 
         <div className="bottom">

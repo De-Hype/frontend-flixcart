@@ -19,7 +19,7 @@ const Category = () => {
           <div className="wrapper">
             <div className="text-icon">
               <AiOutlineLaptop className="category-icon" />
-              <h3 className="category-item-name">Headlights & Lighting</h3>
+              <h3 className="category-item-name">Toyota</h3>
             </div>
             <span>3</span>
           </div>
@@ -27,7 +27,7 @@ const Category = () => {
           <div className="wrapper">
             <div className="text-icon">
               <AiOutlineLaptop className="category-icon" />
-              <h3 className="category-item-name">Tires & Wheels</h3>
+              <h3 className="category-item-name">Ford</h3>
             </div>
             <span>3</span>
           </div>
@@ -35,7 +35,7 @@ const Category = () => {
           <div className="wrapper">
             <div className="text-icon">
               <AiOutlineLaptop className="category-icon" />
-              <h3 className="category-item-name">Tools & Equipment</h3>
+              <h3 className="category-item-name">Hyundai</h3>
             </div>
             <span>3</span>
           </div>
@@ -43,7 +43,7 @@ const Category = () => {
           <div className="wrapper">
             <div className="text-icon">
               <AiOutlineLaptop className="category-icon" />
-              <h3 className="category-item-name">Headlight Bulb</h3>
+              <h3 className="category-item-name">Range Rover</h3>
             </div>
             <span>3</span>
           </div>
@@ -51,7 +51,7 @@ const Category = () => {
           <div className="wrapper">
             <div className="text-icon">
               <AiOutlineLaptop className="category-icon" />
-              <h3 className="category-item-name">Batteries</h3>
+              <h3 className="category-item-name">Bugatti</h3>
             </div>
             <span>3</span>
           </div>
@@ -59,7 +59,7 @@ const Category = () => {
           <div className="wrapper">
             <div className="text-icon">
               <AiOutlineLaptop className="category-icon" />
-              <h3 className="category-item-name">Engine Oil</h3>
+              <h3 className="category-item-name">Mercedez Benz</h3>
             </div>
             <span>3</span>
           </div>
@@ -67,7 +67,7 @@ const Category = () => {
           <div className="wrapper">
             <div className="text-icon">
               <AiOutlineLaptop className="category-icon" />
-              <h3 className="category-item-name">Brake Pads</h3>
+              <h3 className="category-item-name">Lambourghini</h3>
             </div>
             <span>3</span>
           </div>

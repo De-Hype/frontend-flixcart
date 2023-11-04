@@ -5,6 +5,7 @@
     background-color: rgb(85, 1, 85);
     color: white;
     padding: 1rem 1.3rem ;
+    flex-wrap: nowrap;
 }
 .left span{
     font-weight: 700;
@@ -20,3 +21,34 @@
     color: white;
     text-decoration: none;
 }
+
+@media screen and (max-width:960px) {
+    .FirstHeader{
+        padding: 1rem 1.2rem ;
+    }
+    .FirstHeader .left p, .FirstHeader .right .links{
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width:780px) {
+    .FirstHeader{
+        background: blue;
+        padding: 1rem 1.1rem ;
+    }
+    .FirstHeader .left p, .FirstHeader .right .links{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width:620px) {
+    .FirstHeader{
+        padding: 1rem .2rem ;
+    }
+    .FirstHeader .left p, .FirstHeader .right .links{
+        font-size: 8.5px;
+    }
+}
+

@@ -8,6 +8,7 @@ import Cookies from "js-cookie";
 import axios from "axios";
 import { Backend_URL } from "../../server";
 
+
 const Cart = () => {
   const [itemsInCart, setItemsInCart] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -83,7 +84,9 @@ const Cart = () => {
         {itemsInCart ? (
           <div className="Full_Cart">
             <h3 className="Shopping-heading">FlixCart Shopping Cart</h3>
-            <div className="table"></div>
+            <div className="table">
+
+            </div>
             <div className="below-table">
               <div className="left">
                 <button className="clear-cart">Clear Cart</button>

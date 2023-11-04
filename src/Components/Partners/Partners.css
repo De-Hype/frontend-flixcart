@@ -1,12 +1,19 @@
 .Partners{
     padding: 4rem 1.4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
+
 }
 .Partners .container-description{
     text-align: center;
     font-size: 15px;
+    margin-bottom: 2.2rem;
+    margin-top: .9rem;
+}
+.Partners > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Partners > .container > .partner-images{
+    height: 100px;
+    width: 200px;
 }

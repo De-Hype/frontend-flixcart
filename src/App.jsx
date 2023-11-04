@@ -8,16 +8,10 @@ import ProductDetails from "./Pages/ProductDetail.jsx/ProductDetails";
 import Cart from "./Pages/Cart/Cart";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-// import { useState, useEffect } from "react";
-// import axios from 'axios';
-// import Cookies from 'js-cookie'
-// import { Backend_URL } from "./server";
+import AboutUs from "./Pages/AboutUs/AboutUs";
+import Blog from "./Pages/Blog/Blog";
 
 function App() {
-  
-  
-  
   
   return (
     <div className="App">
@@ -46,6 +40,8 @@ function App() {
             <Route exact path="/register" element={<Register />} />
             <Route exact path="/search/:id" element={<SearchResults />} />
             <Route exact path="/item/:id" element={<ProductDetails />} />
+            <Route exact path="/about-us" element={<AboutUs />} />
+            <Route exact path="/blog" element={<Blog />} />
           </>
         </Routes>
       </BrowserRouter>
