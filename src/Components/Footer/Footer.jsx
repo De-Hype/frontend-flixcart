@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
 
       </div>
-      <div className="bottom">
+      <div className="bottom">  
           <h4 className="site-owner">A product of <span>David Hype</span></h4>
           <div className="socials">
             <Link to='https://github.com/De-Hype'><AiOutlineGithub className="social-icon"/></Link>

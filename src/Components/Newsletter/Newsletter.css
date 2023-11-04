@@ -26,3 +26,29 @@
     letter-spacing: .7px;
     cursor: pointer;
 }
+
+@media screen and (max-width:480px) {
+    .Newsletter .container-headings{
+        font-size: 18px;
+    }
+    #newsletter-input{ 
+        font-size: 15.3px;
+        /* padding: 6px 9px; */
+        min-width: 17rem;
+    }
+    #newsletter-btn{  
+        font-size: 15.3px;
+        padding: 7px 9px;
+    }
+}
+@media screen and (max-width:480px){
+    #newsletter-input{ 
+        font-size: 13.5px;
+        /* padding: 6px 9px; */
+        min-width: 14rem;
+    }
+    #newsletter-btn{  
+        font-size: 13.5px;
+        padding: 7px 9px;
+    }
+}

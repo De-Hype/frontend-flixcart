@@ -11,6 +11,7 @@ const Blog = () => {
     <div className="Blog">
       <h4 className="container-headings">Latest News and Blogs</h4>
       <div className="container">
+        <div className="wrapper">
         <div className="blog-box">
           <img src={image_Two} alt="" />
           <div className="blog-detail">
@@ -62,7 +63,7 @@ const Blog = () => {
             </Link>
           </div>
         </div>
-
+        </div>
         <Link to="/" className="blog-view-more">
           View More Blogs
         </Link>
