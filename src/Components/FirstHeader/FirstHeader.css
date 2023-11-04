@@ -34,7 +34,6 @@
 
 @media screen and (max-width:780px) {
     .FirstHeader{
-        background: blue;
         padding: 1rem 1.1rem ;
     }
     .FirstHeader .left p, .FirstHeader .right .links{

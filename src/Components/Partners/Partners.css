@@ -13,7 +13,29 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .Partners > .container > .partner-images{
     height: 100px;
     width: 200px;
+}
+
+
+@media screen and (max-width:960px) {
+    
+    .Partners > .container > .partner-images{
+        height: 100px;
+        width: 150px;
+    }
+}
+@media screen and (max-width:780px) { 
+    .Partners > .container > .partner-images{
+        height: 80px;
+        width: 120px;
+    }
+}
+@media screen and (max-width:560px) { 
+    .Partners > .container > .partner-images{
+        height: 50px;
+        width: 80px;
+    }
 }
