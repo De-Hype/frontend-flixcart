@@ -132,9 +132,10 @@
         flex-direction: column-reverse;
      } 
      .Category {
-        width: 92svw;
+        width: 93svw;
         display: flex;
         flex-direction: column;
+        margin-right: .8rem;
     }
  .Banner .top{
     display: none;

@@ -193,7 +193,8 @@
         grid-template-columns: repeat(1, 1fr);    
     } 
     .FeaturedProductBottom .box{
-        min-width: 94.5svw;
+        min-width: 93svw;
+        margin-right: .8rem;
     }
 }
 /* 
