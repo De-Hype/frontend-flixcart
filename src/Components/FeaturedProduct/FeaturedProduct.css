@@ -44,6 +44,7 @@
     position: absolute;
     background-color: blue;
     display: flex;
+    color: rgb(244, 241, 241);
     padding: 4px 7px;
     top: 20px;
 }
@@ -125,10 +126,16 @@
     font-size: 25px;
 }
 
-@media screen and (max-width:1060px) {
+@media screen and (max-width:1210px) {
+    .FeaturedProductBottom{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 1.2rem;
+        gap: .4rem;
+    }
     .FeaturedProductBottom .box{
         padding: 10px;
-        width: 250px;
+        width: 260px;
         position: relative;
         display: flex;
         height: 300px;
@@ -136,3 +143,60 @@
         gap: .8rem;
     }
 }
+@media screen and (max-width:1080px){
+    .FeaturedProductBottom .box{
+        width: 235px;
+    }
+}
+
+@media screen and (max-width:998px){
+    .FeaturedProductBottom .box{
+        width: 228px;
+    }
+}
+
+@media screen and (max-width:940px){
+    .FeaturedProductBottom{
+        grid-template-columns: repeat(2, 1fr);    
+    }
+    .FeaturedProductBottom .box{
+        width: 430px;
+    }
+}
+@media screen and (max-width:880px){
+    .FeaturedProductBottom .box{
+        max-width: 400px;
+    }
+}
+@media screen and (max-width:830px){
+    .FeaturedProductBottom .box{
+        max-width: 370px;
+    }
+}
+@media screen and (max-width:780px){
+    .FeaturedProductBottom .box{
+        max-width: 345px;
+    }
+}
+@media screen and (max-width:730px){
+    .FeaturedProductBottom .box{
+        max-width: 335px;
+    }
+}
+@media screen and (max-width:700px){
+    .FeaturedProductBottom .box{
+        max-width: 320px;
+    }
+}
+@media screen and (max-width:670px){
+    .FeaturedProductBottom{
+        grid-template-columns: repeat(1, 1fr);    
+    } 
+    .FeaturedProductBottom .box{
+        min-width: 94.5svw;
+    }
+}
+/* 
+.FeaturedProductBottom{
+    grid-template-columns: repeat(2, 1fr);    
+} */
