@@ -44,9 +44,9 @@ const Header = () => {
     }
   };
 
-  const handleMenuShow = ()=>{
-    setMenuShow(!menuShow)
-  }
+  const handleMenuShow = () => {
+    setMenuShow(!menuShow);
+  };
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -107,11 +107,14 @@ const Header = () => {
       </div>
 
       <div className="mobile_screen">
-        <AiOutlineMenu className="mobile-menu" onClick={handleMenuShow} />
-        <div className="logo">
-          <AiOutlineShoppingCart className="header-icon" />
-          <h4 className="logo-text">FlixCart</h4>
+        <div className="menu-wrapper">
+          <AiOutlineMenu className="mobile-menu" onClick={handleMenuShow} />
+          <div className="logo">
+            <AiOutlineShoppingCart className="header-icon" />
+            <h4 className="logo-text">FlixCart</h4>
+          </div>
         </div>
+
         <div className="search-bar">
           <input
             type="text"
@@ -121,11 +124,13 @@ const Header = () => {
           />
           <AiOutlineSearch className="icon" />
         </div>
-        <Link to="/cart" className="header-wrapper">
-          <AiOutlineShopping className="icon" />
-          {cartQuantity <= 0 ? <></> : <span>{cartQuantity}</span>}
-        </Link>
-        <AiOutlineUser className="mobile-user" />
+        <div className="menu-wrapper">
+          <Link to="/cart" className="header-wrapper">
+            <AiOutlineShopping className="icon" />
+            {cartQuantity <= 0 ? <></> : <span>{cartQuantity}</span>}
+          </Link>
+          <AiOutlineUser className="mobile-user" />
+        </div>
       </div>
       {menuShow && (
         <div className="header-toggle">
@@ -134,23 +139,36 @@ const Header = () => {
               <AiOutlineShoppingCart className="header-icon" />
               <h4 className="logo-text">FlixCart</h4>
             </div>
-            <AiOutlineCloseCircle onClick={handleMenuShow} className="mobile-menu" />
+            <AiOutlineCloseCircle
+              onClick={handleMenuShow}
+              className="mobile-menu"
+            />
           </div>
           <div className="header-toggle-body">
             <p>
-              <Link className="toggle-links" to="/">Home</Link>
+              <Link className="toggle-links" to="/">
+                Home
+              </Link>
             </p>
             <p>
-              <Link className="toggle-links" to="/about-us">About Us</Link>
+              <Link className="toggle-links" to="/about-us">
+                About Us
+              </Link>
             </p>
             <p>
-              <Link className="toggle-links" to="/shop">Shop</Link>
+              <Link className="toggle-links" to="/shop">
+                Shop
+              </Link>
             </p>
             <p>
-              <Link className="toggle-links" to="/blog">Blog</Link>
+              <Link className="toggle-links" to="/blog">
+                Blog
+              </Link>
             </p>
             <p>
-              <Link className="toggle-links" to="/">Contact Us</Link>
+              <Link className="toggle-links" to="/">
+                Contact Us
+              </Link>
             </p>
           </div>
         </div>
