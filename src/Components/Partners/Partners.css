@@ -33,9 +33,10 @@
         width: 120px;
     }
 }
+
 @media screen and (max-width:560px) { 
     .Partners > .container > .partner-images{
-        height: 50px;
-        width: 80px;
+        height: 45px;
+        width: 65px;
     }
 }
