@@ -10,6 +10,19 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate()
+
+  const handleOauth =()=>{
+    toast.info(`Oauth will be available soon, still building`, {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+  }
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
@@ -93,10 +106,10 @@ const Login = () => {
           </form>
           <h4 className="or">Or</h4>
           <div className="auth-ouath">
-            <button>
+            <button onClick={handleOauth}>
               Sign In via <AiOutlineGooglePlus className="auth-icons" />
             </button>
-            <button>
+            <button onClick={handleOauth}>
               Sign In via <AiOutlineFacebook className="auth-icons" />
             </button>
           </div>
