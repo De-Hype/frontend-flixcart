@@ -52,3 +52,21 @@
     }
 }
 
+@media screen and (max-width:480px) {
+    .FirstHeader{
+        padding: 1rem .2rem ;
+    }
+    .FirstHeader .left p, .FirstHeader .right .links{
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .FirstHeader{
+        display:none;
+    }
+    .FirstHeader .left p, .FirstHeader .right .links{
+        font-size: 5px;
+    }
+}
+

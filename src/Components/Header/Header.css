@@ -87,6 +87,33 @@
     cursor: pointer;   
 }
 
+.header-toggle{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100svh;
+}
+.header-toggle-top{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-toggle-body > p{
+    text-align: center;
+    margin: 1.4rem 0;
+}
+.toggle-links{
+    text-decoration: none;
+    color: black;
+}
+.toggle-links:hover{
+    color: purple;
+}
 
 @media screen and (max-width:968px) {
     
@@ -113,6 +140,9 @@
     .Header > .user-account-header, .Header> .search-bar, .Header > .logo{
         display: none;
     }
+    .Header{
+        padding: .9rem ;
+    }
     .mobile_screen{
         display: flex;
         align-items: center;
@@ -122,6 +152,22 @@
     #search-bar-input{
         font-size: 16px;
         width: 13.5rem;  
+    }
+    
+}
+
+@media screen and (max-width:480px) { 
+    
+    .Header{
+        padding: .8rem ;
+    }
+    .logo-text{
+        font-weight: 800;
+        font-size: 15px;
+    }
+    #search-bar-input{
+        font-size: 11px;
+        width: 9.3rem;  
     }
     .header-toggle{
         display: flex;
@@ -133,21 +179,42 @@
         left: 0;
         height: 100svh;
     }
-    .header-toggle-top{
-        padding: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .mobile-menu, .mobile-user{
+        font-size: 22px;
+        color: rgb(85, 1, 85);
+        font-weight: 800;
+        cursor: pointer;   
     }
-    .header-toggle-body > p{
-        text-align: center;
-        margin: 1.4rem 0;
+    .header-icon{
+        font-size: 22px;
+        background-color: rgb(85, 1, 85);
+        color: white; 
+        border-radius: 30%;
     }
-    .toggle-links{
-        text-decoration: none;
-        color: black;
+    .header-wrapper .icon{
+        font-size: 35px;
+        width: 100%;
     }
-    .toggle-links:hover{
-        color: purple;
+    .header-wrapper span{
+        position: absolute;
+        left: 30%;
+        bottom: 3px;
+        font-size: 13px;
+        background-color: rgb(233, 21, 233);
+        padding: 2px;
+        border-radius: 30%;  
+    }
+}
+@media screen and (max-width:360px) {
+    #search-bar-input{
+        font-size: 8px;
+        width: 6rem;  
+    }
+    .header-wrapper .icon{
+        font-size: 28px;
+        width: 100%;
+    }
+    .header-wrapper span{
+        font-size: 11px;
     }
 }
