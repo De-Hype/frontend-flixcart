@@ -13,6 +13,11 @@ const Cart = () => {
   const [itemsInCart, setItemsInCart] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const navigate = useNavigate();
+
+  const clearCart = () =>{
+    localStorage.clear()
+    
+  }
   
   const CheckCookie = async () => {
     const user_flixcart_Id = Cookies.get("user_flixcart_Id");
@@ -89,7 +94,7 @@ const Cart = () => {
             </div>
             <div className="below-table">
               <div className="left">
-                <button className="clear-cart">Clear Cart</button>
+                <button onClick={clearCart} className="clear-cart">Clear Cart</button>
               </div>
               <div className="right">
                 <div className="subtotal">

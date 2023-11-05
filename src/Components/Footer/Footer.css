@@ -40,6 +40,18 @@
     color: black;
     font-size: 17px;
 }
+#careers{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+#careers span{
+    font-size: 12px;
+    background: white;
+    color: black;
+    padding: 4px;
+    border-radius: 9px;
+}
 .Footer .bottom{
     display: flex;
     margin-top: 2rem;
@@ -50,8 +62,9 @@
     font-size: 15px;
     color: rgb(17, 17, 17);
 }
-.site-owner span{
+.site-owner .span{
     color: rgb(77, 77, 77);
+    text-decoration: none;
 }
 .bottom .socials{
     display: flex;
@@ -69,6 +82,14 @@
         align-items: center;
         gap: 1.5rem;
     }
+    .footer-links{
+        font-size: 15px;
+    }
+    .navigation-heading{
+        color: rgb(63, 63, 63);
+        font-weight: 700;
+        font-size: 13px;
+    }
 
 }
 
@@ -78,4 +99,5 @@
         gap: 2.5rem;
         /* background: blue; */
     }
+
 }

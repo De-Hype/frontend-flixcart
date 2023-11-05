@@ -1,6 +1,7 @@
 import FirstHeader from "../../Components/FirstHeader/FirstHeader";
 import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
+import './AboutUs.css';
 
 const AboutUs = () => {
   return (

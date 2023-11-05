@@ -34,7 +34,7 @@ const Register = () => {
         name, email, username, password
       });
       
-      // console.log(result)
+      console.log(result)
       const res = result.data
       if (res.status === 'ok' && res.success === true  ){
         toast.success(`${res.message}, redirecting to login page`, {
@@ -48,10 +48,10 @@ const Register = () => {
           theme: "colored",
           });
           navigate('/sign-in')
-          setName(null)
-          setUsername(null);
-          setEmail(null);
-          setPassword(null);
+          // setName(null)
+          // setUsername(null);
+          // setEmail(null);
+          // setPassword(null);
       } else {
         toast.error(`${res.message}`, {
           position: "top-center",
@@ -65,16 +65,16 @@ const Register = () => {
           });
       }
     } catch (error) {
-      // toast.error('No Internet Connection' ,{
-      //   position: "top-center",
-      //   autoClose: 5000,
-      //   hideProgressBar: false,
-      //   closeOnClick: true,
-      //   pauseOnHover: true,
-      //   draggable: true,
-      //   progress: undefined,
-      //   theme: "colored",
-      //   });
+      toast.error('No Internet Connection' ,{
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
         console.log(error)
     }
   };

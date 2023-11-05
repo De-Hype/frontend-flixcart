@@ -13,7 +13,6 @@ const FeaturedProductBottom = () => {
   const dispatch = useDispatch()
   const getProduct = useSelector((state)=> state.getProducts);
   const fetchedData = getProduct.fetchedHomeItems.data;
-  console.log(getProduct)
   useEffect(() => {
     dispatch(getHomeItems())
   }, [])

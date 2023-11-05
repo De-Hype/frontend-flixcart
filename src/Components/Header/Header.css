@@ -232,11 +232,14 @@
 @media screen and (max-width:360px) {
     #search-bar-input{
         font-size: 8px;
-        width: 10rem;  
+        width: 9.5rem;  
+    }
+    .mobile-menu, .mobile-user{
+        font-size: 20px;   
     }
     .header-wrapper .icon{
         font-size: 28px;
-        width: 100%;
+
     }
     .header-wrapper span{
         font-size: 11px;

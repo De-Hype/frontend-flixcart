@@ -64,7 +64,7 @@ const Blog = () => {
           </div>
         </div>
         </div>
-        <Link to="/" className="blog-view-more">
+        <Link to="https://viteblog.netlify.app" className="blog-view-more">
           View More Blogs
         </Link>
       </div>

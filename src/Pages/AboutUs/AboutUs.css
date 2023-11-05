@@ -1,0 +1,15 @@
+.AboutUs{
+    padding: 4rem 1.5rem;
+    /* display: flex; */
+}
+.About_Us_Page{
+    text-align: center;
+    margin: 1.4rem 0;
+}
+.about-us-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}

@@ -21,15 +21,16 @@ const Footer = () => {
               <Link to="/" className="footer-links">
                 Home
               </Link>
-              <Link to="/" className="footer-links">
+              <Link to="/about-us" className="footer-links">
                 About Us
               </Link>
-              <Link to="/" className="footer-links">
+              <Link to="/shop" className="footer-links">
                 Shop
               </Link>
-              <Link to="/" className="footer-links">
-                Careers
+              <Link to="/" id="careers" className="footer-links">
+                Careers <span>We are hiring</span>
               </Link>
+              
             </div>
           </div>
 
@@ -72,7 +73,7 @@ const Footer = () => {
 
       </div>
       <div className="bottom">  
-          <h4 className="site-owner">A product of <span>David Hype</span></h4>
+          <h4 className="site-owner">A product of <Link to='https://david-hype.netlify.app' className='span'>David Hype</Link></h4>
           <div className="socials">
             <Link to='https://github.com/De-Hype'><AiOutlineGithub className="social-icon"/></Link>
             <Link to='/'><AiOutlineLinkedin className="social-icon"/></Link>
