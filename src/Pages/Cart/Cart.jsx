@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import Cookies from "js-cookie";
 import axios from "axios";
 import { Backend_URL } from "../../server";
+import CartTable from "./CartTable";
 
 
 const Cart = () => {
@@ -15,8 +16,19 @@ const Cart = () => {
   const navigate = useNavigate();
 
   const clearCart = () =>{
+
     localStorage.clear()
-    
+    toast.info(`Cart Cleared Succesfully`, {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+    navigate('/shop')
   }
   
   const CheckCookie = async () => {
@@ -90,7 +102,7 @@ const Cart = () => {
           <div className="Full_Cart">
             <h3 className="Shopping-heading">FlixCart Shopping Cart</h3>
             <div className="table">
-
+              <CartTable/>
             </div>
             <div className="below-table">
               <div className="left">
