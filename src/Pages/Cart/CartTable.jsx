@@ -1,5 +1,11 @@
+import { useDispatch } from 'react-redux'
+import { removeFromCart } from '../../redux/Cartslice';
 const CartTable = () => {
+  const dispatch = useDispatch()
   const storageData = JSON.parse(localStorage.getItem("cartItems"));
+  const handleRemoveFromCart =(cartItem)=>{
+    dispatch(removeFromCart(cartItem))
+  }
 
   return (
     <>
@@ -17,7 +23,7 @@ const CartTable = () => {
                 <img src={cartItem.imageUrl} alt={cartItem.name} />
                 <div className="cart-product-details">
                   <h3>{cartItem.name}</h3>
-                  <button>Remove</button>
+                  <button onClick={()=>handleRemoveFromCart(cartItem)}>Remove</button>
                 </div>
               </div>
               <div className="cart-product-price">${cartItem.new_price}</div>

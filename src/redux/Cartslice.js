@@ -58,12 +58,9 @@ export const cartSlice = createSlice({
     removeFromCart(state, action) {
       const nextCartItems = state.cartItems.filter(
         (cartItem) => cartItem._id !== action.payload._id
-        
       );
       state.cartItems = nextCartItems;
       localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
-
-      //Will Add A React Toast Here For The Items That I Took Out
       toast.info(`${action.payload.name} removed from cart`, {
         position: "top-center",
         autoClose: 5000,
