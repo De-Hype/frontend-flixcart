@@ -1,12 +1,17 @@
 import { useDispatch } from 'react-redux'
 import { removeFromCart } from '../../redux/Cartslice';
+import {useEffect} from 'react';
+import { useNavigate } from 'react-router-dom';
+
 const CartTable = () => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const storageData = JSON.parse(localStorage.getItem("cartItems"));
   const handleRemoveFromCart =(cartItem)=>{
     dispatch(removeFromCart(cartItem))
+    navigate('/cart')
   }
-
+  
   return (
     <>
       <div className="cart-table-container">

@@ -60,7 +60,9 @@ export const cartSlice = createSlice({
         (cartItem) => cartItem._id !== action.payload._id
       );
       state.cartItems = nextCartItems;
+      state.cartTotalAmount = state.cartTotalAmount -  state.cartItems.cartQuantity
       localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
+      localStorage.setItem('cartTotalQuantity', JSON.stringify(state.cartTotalAmount))
       toast.info(`${action.payload.name} removed from cart`, {
         position: "top-center",
         autoClose: 5000,
