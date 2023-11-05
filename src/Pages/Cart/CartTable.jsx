@@ -1,6 +1,5 @@
 import { useDispatch } from 'react-redux'
-import { removeFromCart } from '../../redux/Cartslice';
-import {useEffect} from 'react';
+import { removeFromCart, addToCart, decreaseCart } from '../../redux/Cartslice';
 import { useNavigate } from 'react-router-dom';
 
 const CartTable = () => {
@@ -9,6 +8,14 @@ const CartTable = () => {
   const storageData = JSON.parse(localStorage.getItem("cartItems"));
   const handleRemoveFromCart =(cartItem)=>{
     dispatch(removeFromCart(cartItem))
+    navigate('/cart')
+  }
+  const handleAddToCart = (cartItem) => {
+    dispatch(addToCart(cartItem));
+    navigate('/cart')
+  };
+  const handleDecreaseFromCart =(cartItem)=>{
+    dispatch(decreaseCart(cartItem))
     navigate('/cart')
   }
   
@@ -33,9 +40,9 @@ const CartTable = () => {
               </div>
               <div className="cart-product-price">${cartItem.new_price}</div>
               <div className="cart-product-quantity">
-                <button>-</button>
+                <button onClick={()=> handleDecreaseFromCart(cartItem)}>-</button>
                 <div className="count">{cartItem.cartQuantity}</div>
-                <button>+</button>
+                <button onClick={()=>handleAddToCart(cartItem)}>+</button>
               </div>
 
               <div className="cart-product-total-price">

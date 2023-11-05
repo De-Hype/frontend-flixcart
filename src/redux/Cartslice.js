@@ -10,6 +10,7 @@ const initialState = {
   cartTotalAmount: localStorage.getItem("cartTotalQuantity")
   ? JSON.parse(localStorage.getItem("cartTotalQuantity"))
   : 0,
+  
 };
 
 export const cartSlice = createSlice({
@@ -60,7 +61,9 @@ export const cartSlice = createSlice({
         (cartItem) => cartItem._id !== action.payload._id
       );
       state.cartItems = nextCartItems;
-      state.cartTotalAmount = state.cartTotalAmount -  state.cartItems.cartQuantity
+      
+      state.cartTotalAmount = state.cartTotalAmount - action.payload.cartQuantity
+      // state.cartTotalAmount -= action.payload.cartQuantity
       localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
       localStorage.setItem('cartTotalQuantity', JSON.stringify(state.cartTotalAmount))
       toast.info(`${action.payload.name} removed from cart`, {
@@ -93,6 +96,7 @@ export const cartSlice = createSlice({
       localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
       localStorage.setItem('cartTotalQuantity', JSON.stringify(state.cartTotalAmount))
     },
+    
   },
 });
 

@@ -74,13 +74,13 @@ const Header = () => {
       <div className="user-account-header">
         <div className="header-auth">
           <p className="header-auth-hello">
-            My Account{" "}
+            My Account
             <span>
               <AiOutlineDown className="icon" />
             </span>
           </p>
           <p className="header-auth-hello-text">
-            Hello{" "}
+            Hello
             <span>
               <Link className="link" to="/sign-in">
                 sign in
@@ -88,10 +88,7 @@ const Header = () => {
             </span>
           </p>
         </div>
-        {/* <div className="header-wrapper">
-          <AiOutlineHeart className="icon" />
-          <span>10</span>
-        </div> */}
+       
         <Link to="/cart" className="header-wrapper">
           <AiOutlineShopping className="icon" />
           {cartQuantity <= 0 ? <></> : <span>{cartQuantity}</span>}

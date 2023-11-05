@@ -84,9 +84,16 @@ const Cart = () => {
   };
   const CheckStore = async () => {
     const itemNum = JSON.parse(localStorage.getItem("cartItems"));
-
-    if (itemNum !== null || undefined) {
-      setItemsInCart(true);
+    
+    if (itemNum !== null && itemNum.length > 1  || undefined && itemNum.length > 1 ){
+      console.log('Checking for item')
+      console.log(itemNum.length)
+      console.log(itemNum)
+      console.log(typeof(itemNum.length))
+      setItemsInCart(true)
+    } else{
+      setItemsInCart(false);
+      console.log('no item in cart')
     }
   };
   useEffect(() => {
