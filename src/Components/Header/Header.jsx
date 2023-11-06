@@ -14,6 +14,7 @@ import axios from 'axios';
 import { useState, useEffect } from "react";
 import { useDispatch } from 'react-redux';
 import { seeSearchResult } from "../../redux/productSlice";
+import { Backend_URL } from "../../server";
 const Header = () => {
   const [cartQuantity, setCartQuantity] = useState(0);
   const [count, setCount] = useState(0);
@@ -46,7 +47,7 @@ const Header = () => {
     
       console.log(typeof(searchTerm))
       try {
-       const result = await axios.get(`http://localhost:7070/api/admin/product/search-product/${searchTerm}`);
+       const result = await axios.get(`${Backend_URL}/admin/product/search-product/${searchTerm}`);
         navigate('/search');
         dispatch(seeSearchResult(result));
         

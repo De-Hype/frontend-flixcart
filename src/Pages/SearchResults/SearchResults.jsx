@@ -20,11 +20,11 @@ const SearchResults = () => {
 
   const fetchSearchResult = () => {
     if (getProduct.data.status == "ok") {
-      console.log(passResult);
+
       setResultAvailable(true);
       return setPassResult(getProduct.data.findProducts);
     } else {
-      console.log(passResult);
+      
       setResultAvailable(false);
       return setPassResult(getProduct.data.message);
     }
@@ -75,7 +75,7 @@ const SearchResults = () => {
       <Header />
 
       <div className="SearchResults">
-        <h4 className="found-results">
+        <h4 className="found-results"> 
           Search results for '<span>{getProduct.data.searchTerm}</span>'
         </h4>
         <div className="FeaturedProductBottom">
