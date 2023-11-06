@@ -34,7 +34,7 @@ const Register = () => {
         name, email, username, password
       });
       
-      console.log(result)
+      
       const res = result.data
       if (res.status === 'ok' && res.success === true  ){
         toast.success(`${res.message}, redirecting to login page`, {

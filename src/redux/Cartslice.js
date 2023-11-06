@@ -21,9 +21,9 @@ export const cartSlice = createSlice({
       const itemIndex = state.cartItems.findIndex(
         (item) => item._id === action.payload._id
       );
-      console.log(itemIndex)
+      
       if (itemIndex >= 0) {
-        console.log('Succesfully increased an item to cart')
+        
         state.cartItems[itemIndex].cartQuantity += 1;
         state.cartTotalAmount +=1
         toast.success(`Successfully added another ${action.payload.name} to cart`, {
@@ -37,7 +37,7 @@ export const cartSlice = createSlice({
           theme: "colored",
           });
       } else {
-        console.log('Succesfully added a new item to cart')
+      
         const tempProduct = { ...action.payload, cartQuantity: 1 };
         state.cartTotalAmount +=1
         state.cartItems.push(tempProduct);
@@ -98,8 +98,19 @@ export const cartSlice = createSlice({
       localStorage.setItem('cartTotalQuantity', JSON.stringify(state.cartTotalAmount))
     },
     clearCart(state){
-      state.cartItems = 0,
-      state.cartTotalAmount = 0
+      state.cartItems = [];
+      state.cartTotalAmount = 0;
+      localStorage.clear()
+      toast.info(`Cart Cleared Succesfully`, {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
     }
     
   },

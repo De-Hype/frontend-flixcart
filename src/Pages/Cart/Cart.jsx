@@ -5,6 +5,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useState, useEffect } from "react";
 import Cookies from "js-cookie";
+import { useDispatch } from 'react-redux'
+import { clearCart } from '../../redux/Cartslice';
 import axios from "axios";
 import { Backend_URL } from "../../server";
 import CartTable from "./CartTable";
@@ -14,20 +16,10 @@ const Cart = () => {
   const [itemsInCart, setItemsInCart] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const navigate = useNavigate();
+  const dispatch = useDispatch()
 
-  const clearCart = () =>{
-
-    localStorage.clear()
-    toast.info(`Cart Cleared Succesfully`, {
-      position: "top-center",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "colored",
-    });
+  const handleClearCart = () =>{
+    dispatch(clearCart())
     navigate('/shop')
   }
   
@@ -86,14 +78,11 @@ const Cart = () => {
     const itemNum = JSON.parse(localStorage.getItem("cartItems"));
     
     if (itemNum !== null && itemNum.length > 0  || undefined && itemNum.length > 0 ){
-      console.log('Checking for item')
-      console.log(itemNum.length)
-      console.log(itemNum)
-      console.log(typeof(itemNum.length))
+     
       setItemsInCart(true)
     } else{
       setItemsInCart(false);
-      console.log('no item in cart')
+      
     }
   };
   useEffect(() => {
@@ -113,7 +102,7 @@ const Cart = () => {
             </div>
             <div className="below-table">
               <div className="left">
-                <button onClick={clearCart} className="clear-cart">Clear Cart</button>
+                <button onClick={handleClearCart} className="clear-cart">Clear Cart</button>
               </div>
               <div className="right">
                 <div className="subtotal">
