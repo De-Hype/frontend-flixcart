@@ -80,10 +80,10 @@ const Header = () => {
             </span>
           </p>
           <p className="header-auth-hello-text">
-            Hello
+            Hello 
             <span>
-              <Link className="link" to="/sign-in">
-                sign in
+               <Link className="link" to="/sign-in">
+                  sign in
               </Link>
             </span>
           </p>

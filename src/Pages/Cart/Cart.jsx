@@ -85,7 +85,7 @@ const Cart = () => {
   const CheckStore = async () => {
     const itemNum = JSON.parse(localStorage.getItem("cartItems"));
     
-    if (itemNum !== null && itemNum.length > 1  || undefined && itemNum.length > 1 ){
+    if (itemNum !== null && itemNum.length > 0  || undefined && itemNum.length > 0 ){
       console.log('Checking for item')
       console.log(itemNum.length)
       console.log(itemNum)
@@ -129,7 +129,7 @@ const Cart = () => {
                   <button onClick={checkLogin} className="proceed">
                     Check Out
                   </button>
-                  <Link className="wrapper">
+                  <Link to='/shop' className="wrapper">
                     <AiOutlineDoubleLeft className="icon" />
                     <p className="cart-start-shopping">Continue Shopping</p>
                   </Link>

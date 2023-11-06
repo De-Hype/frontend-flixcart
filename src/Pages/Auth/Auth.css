@@ -30,7 +30,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50svw;
+    width: 70vw;
     gap: .9rem;
     margin-top: 2rem;
 }
@@ -81,4 +81,22 @@
 .auth-icons{
     font-size: 20px;
     color: blue;
+}
+
+
+@media screen and (max-width:450px) {
+    .Auth-container .wrapper{
+        
+        width: 70vw;
+        
+    }
+    #form-submit{
+        font-size: 15px;
+    }
+    .Auth-container .wrapper .auth-ouath button, .auth-icons{
+        font-size: 14px;
+    }
+    .Auth-container .text{
+        font-size:13px;
+    }
 }

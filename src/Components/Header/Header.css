@@ -74,8 +74,10 @@
     font-size: 14px;
 }
 .header-auth-hello-text .link{
-    text-decoration: none;
-    
+    text-decoration: none;  
+}
+.header-auth-hello-text span{
+    padding-left: 3px;
 }
 .header-auth-sign-in{
     font-weight: 600;

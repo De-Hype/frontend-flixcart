@@ -9,7 +9,7 @@ const initialState = {
   cartQuantity: 0,
   cartTotalAmount: localStorage.getItem("cartTotalQuantity")
   ? JSON.parse(localStorage.getItem("cartTotalQuantity"))
-  : 0,
+  : null,
   
 };
 
@@ -91,6 +91,7 @@ export const cartSlice = createSlice({
           (cartItem) => cartItem._id !== action.payload._id
         );
         state.cartItems = nextCartItems;
+        state.cartTotalAmount -=1
         //We Will Add A Toast That An Item Has Been Removed Successfully
       }
       localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
