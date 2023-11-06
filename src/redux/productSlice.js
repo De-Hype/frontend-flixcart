@@ -22,6 +22,7 @@ const initialState = {
   fetchedCartItems: [],
   fetchedHomeItems: [],
   error: "",
+  searchResult:[]
 };
 
 export const productSlice = createSlice({
@@ -54,6 +55,11 @@ export const productSlice = createSlice({
       state.error = action.error.message;
     });
   },
+  reducers:{
+    seeSearchResult:(state, action)=>{
+      state.searchResult=(action.payload)
+    }
+  }
 });
-
+export const {seeSearchResult} = productSlice.actions;
 export default productSlice.reducer;

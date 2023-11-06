@@ -94,6 +94,16 @@ export const cartSlice = createSlice({
         state.cartTotalAmount -=1
         //We Will Add A Toast That An Item Has Been Removed Successfully
       }
+      toast.info(`Sucessfully decreased quamtity of ${action.payload.name}`, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
       localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
       localStorage.setItem('cartTotalQuantity', JSON.stringify(state.cartTotalAmount))
     },

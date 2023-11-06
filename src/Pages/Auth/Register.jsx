@@ -48,10 +48,6 @@ const Register = () => {
           theme: "colored",
           });
           navigate('/sign-in')
-          // setName(null)
-          // setUsername(null);
-          // setEmail(null);
-          // setPassword(null);
       } else {
         toast.error(`${res.message}`, {
           position: "top-center",

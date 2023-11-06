@@ -9,9 +9,11 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 import "./Header.css";
-import { Link } from "react-router-dom";
-
+import { Link, useNavigate } from "react-router-dom";
+import axios from 'axios';
 import { useState, useEffect } from "react";
+import { useDispatch } from 'react-redux';
+import { seeSearchResult } from "../../redux/productSlice";
 const Header = () => {
   const [cartQuantity, setCartQuantity] = useState(0);
   const [count, setCount] = useState(0);
@@ -19,6 +21,9 @@ const Header = () => {
   const [itemValue, setItemValue] = useState(1);
   const [searchTerm, setSearchTerm] = useState("");
   const [menuShow, setMenuShow] = useState(false);
+  const [passResult, setPassResult] = useState(null);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const FindValue = () => {
     const getValue = localStorage.getItem("cartTotalQuantity");
@@ -36,12 +41,19 @@ const Header = () => {
     }
   };
 
-  const SearchApi = async () => {
-    if (searchTerm !== "") {
+  const SearchApi = async (e) => {
+    e.preventDefault
+    
+      console.log(typeof(searchTerm))
       try {
-        await axios.get();
-      } catch (error) {}
-    }
+       const result = await axios.get(`http://localhost:7070/api/admin/product/search-product/${searchTerm}`);
+        navigate('/search');
+        dispatch(seeSearchResult(result));
+        
+      } catch (error) {
+        console.log(error)
+      }
+    
   };
 
   const handleMenuShow = () => {
@@ -68,8 +80,9 @@ const Header = () => {
           name=""
           placeholder="Search for products"
           id="search-bar-input"
+          onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <AiOutlineSearch className="icon" />
+        <AiOutlineSearch className="icon" onClick={SearchApi}/>
       </div>
       <div className="user-account-header">
         <div className="header-auth">
