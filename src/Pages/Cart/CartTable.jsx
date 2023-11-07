@@ -14,6 +14,7 @@ const CartTable = () => {
     dispatch(addToCart(cartItem));
     navigate('/cart')
   };
+  
   const handleDecreaseFromCart =(cartItem)=>{
     dispatch(decreaseCart(cartItem))
     navigate('/cart')

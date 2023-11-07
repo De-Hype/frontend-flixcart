@@ -69,3 +69,11 @@
 .product-icons{
     font-size: 19px;
 }
+@media screen and (max-width:980px) {
+    .product-details-top{
+        flex-direction: column;
+    }
+    .product-details-top .product-details-info{
+        gap: .9rem;
+    }
+}
