@@ -28,8 +28,8 @@
 }
 .search-bar .icon{
     position: absolute;
-    right: 6px;
-    font-size: 19px;
+    right: 10px;
+    font-size: 20px;
     cursor: pointer;
 }
 #search-bar-input{

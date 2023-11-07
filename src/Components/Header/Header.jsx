@@ -43,9 +43,8 @@ const Header = () => {
   };
 
   const SearchApi = async (e) => {
-    e.preventDefault
-    
-      console.log(typeof(searchTerm))
+    e.preventDefault()
+ 
       try {
        const result = await axios.get(`${Backend_URL}/admin/product/search-product/${searchTerm}`);
         navigate('/search');
@@ -83,7 +82,8 @@ const Header = () => {
           id="search-bar-input"
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <AiOutlineSearch className="icon" onClick={SearchApi}/>
+       
+        <AiOutlineSearch className="icon" onClick={SearchApi}/> 
       </div>
       <div className="user-account-header">
         <div className="header-auth">
@@ -132,8 +132,9 @@ const Header = () => {
             name=""
             placeholder="Search for products"
             id="search-bar-input"
+            onChange={(e) => setSearchTerm(e.target.value)}
           />
-          <AiOutlineSearch className="icon" />
+          <AiOutlineSearch className="icon" onClick={SearchApi} />
         </div>
         <div className="menu-wrapper">
           <Link to="/cart" className="header-wrapper">
