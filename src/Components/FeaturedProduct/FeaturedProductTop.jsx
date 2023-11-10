@@ -5,7 +5,7 @@ const FeaturedProductTop = () => {
   return (
     <div className="FeaturedProductTop">
 
-        <h4 className="heading">Fearured Products</h4>
+        <h4 className="heading">Featured Products</h4>
       
       <Link className="right-links" to='/shop'>Shop <AiOutlineArrowRight/></Link>
     </div>
