@@ -1,7 +1,6 @@
 import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
 import "./ProductDetails.css";
-import image_Two from "../../assets/image_Two.jpg";
 import {
   AiOutlineChrome,
   AiOutlineGithub,
@@ -23,9 +22,9 @@ const ProductDetails = () => {
   const handleAddToCart = (item) => {
     dispatch(addToCart(item));
   };
-  const handleDecreaseFromCart =(item)=>{
-    dispatch(decreaseCart(item))
-  }
+  // const handleDecreaseFromCart =(item)=>{
+  //   dispatch(decreaseCa(item))
+  // }
  
   const RevealProduct = async () =>{
     try {
@@ -83,11 +82,12 @@ const ProductDetails = () => {
               <AiOutlineShoppingCart className="last-box-prop-icon"  onClick={() => handleAddToCart(item)}/>
               Add to cart
             </button>
-            <div className="product-details-info-number">
+            We Are Taking Out A Feature
+             {/* <div className="product-details-info-number">
               <button className="cart-number-btn" onClick={() => handleAddToCart(item)}>+</button> 
               <span>{item.cartQuantity}</span>
               <button className="cart-number-btn" onClick={()=> handleDecreaseFromCart(item)}>-</button>
-            </div>
+            </div>  */}
           </div>
         </div>
       </div>
@@ -101,7 +101,9 @@ const ProductDetails = () => {
     <>
       <Header />
       <div className="ProductDetails">
-        {showResult? <ShowProductDetails/>: <h4>Not Found</h4>}
+        {showResult? <ShowProductDetails/>: <div className="no_product_founds">
+              <h4>Invalid Product ID</h4>
+            </div>}
       </div>
       <Footer />
     </>

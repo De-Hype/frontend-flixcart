@@ -15,6 +15,7 @@ import { useState, useEffect } from "react";
 import { useDispatch } from 'react-redux';
 import { seeSearchResult } from "../../redux/productSlice";
 import { Backend_URL } from "../../server";
+import Cookies from "js-cookie";
 const Header = () => {
   const [cartQuantity, setCartQuantity] = useState(0);
   const [count, setCount] = useState(0);
@@ -22,7 +23,8 @@ const Header = () => {
   const [itemValue, setItemValue] = useState(1);
   const [searchTerm, setSearchTerm] = useState("");
   const [menuShow, setMenuShow] = useState(false);
-  const [passResult, setPassResult] = useState(null);
+  // const [passResult, setPassResult] = useState(null);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -54,6 +56,30 @@ const Header = () => {
         console.log(error)
       }
     
+  };
+
+  const CheckCookie = async () => {
+    const user_flixcart_Id = Cookies.get("user_flixcart_Id");
+    
+    try {
+      if (user_flixcart_Id !== undefined || null) {
+        const result = await axios.post(`${Backend_URL}/verify-cookie`, {
+          user_flixcart_Id,
+        });   
+        const res = result.data;
+        if (res.status === "ok" && res.success === true) {
+          setIsAuthenticated(true);
+         
+        } else {
+          
+          setIsAuthenticated(false);
+        }
+      }
+    } catch (err) {
+      console.log(err);
+      
+      setIsAuthenticated(false);
+    }
   };
 
   const handleMenuShow = () => {
@@ -95,11 +121,11 @@ const Header = () => {
           </p>
           <p className="header-auth-hello-text">
             Hello 
-            <span>
+            {/* <span>
                <Link className="link" to="/sign-in">
                   sign in
               </Link>
-            </span>
+            </span> */}
           </p>
         </div>
        

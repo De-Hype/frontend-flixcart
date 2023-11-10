@@ -3,7 +3,6 @@ import {
   AiOutlineShopping,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
-import image_One from "../../assets/image_One.jpg";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux';
@@ -38,9 +37,9 @@ const FeaturedProductBottom = () => {
             
           </div>
           <div className="last">
-            <Link to='/item/1'>
-              <AiOutlineEye className="product-icon" />
-            </Link>
+          <Link to={`/item/${item._id}`}>
+                  <AiOutlineEye className="product-icon" />
+                </Link>
             <h4 className="last-box-prop" onClick={() => handleAddToCart(item)}>
               <AiOutlineShoppingCart className="last-box-prop-icon" />
               Add to cart

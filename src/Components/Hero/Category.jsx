@@ -7,11 +7,11 @@ const Category = () => {
   }
   return (
     <div className="Category">
-      <div className="top">
+      <div className="top"  onClick={hideCategoryFunction}>
         <h4 className="category-name">All Categories</h4>
         <AiOutlineDown
           className="category-icon"
-          onClick={hideCategoryFunction}
+         
         />
       </div>
       {hideCategory && (

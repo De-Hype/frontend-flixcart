@@ -1,5 +1,6 @@
 import "./Blog.css";
 import image_Two from "../../assets/image_Two.jpg";
+import image_Three from "../../assets/image_Three.jpg";
 import {
   AiOutlineArrowRight,
   AiOutlineCalendar,
@@ -13,7 +14,7 @@ const Blog = () => {
       <div className="container">
         <div className="wrapper">
         <div className="blog-box">
-          <img src={image_Two} alt="" />
+          <img src={image_Three} alt="" />
           <div className="blog-detail">
             <div className="top">
               <div className="calendar">

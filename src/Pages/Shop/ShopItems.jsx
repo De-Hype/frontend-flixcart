@@ -37,9 +37,9 @@ const ShopItems = () => {
               </div>
             </div>
             <div className="last">
-              <Link to="/">
-                <AiOutlineEye className="product-icon" />
-              </Link>
+            <Link to={`/item/${item._id}`}>
+                  <AiOutlineEye className="product-icon" />
+                </Link>
               <h4
                 className="last-box-prop"
                 onClick={() => handleAddToCart(item)}

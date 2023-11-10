@@ -31,8 +31,8 @@ const Login = () => {
         password,
       });
       const res = result.data;
-      console.log(res)
-      console.log(result)
+      // console.log(res)
+      // console.log(result)
      
       if (res.status === "ok" && res.success === true) {
         toast.success(`${res.message}`, {

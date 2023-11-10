@@ -22,7 +22,8 @@ const initialState = {
   fetchedCartItems: [],
   fetchedHomeItems: [],
   error: "",
-  searchResult:[]
+  searchResult:[],
+  
 };
 
 export const productSlice = createSlice({
