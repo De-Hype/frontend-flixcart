@@ -63,9 +63,12 @@ const Header = () => {
     
     try {
       if (user_flixcart_Id !== undefined || null) {
-        const result = await axios.post(`${Backend_URL}/verify-cookie`, {
+        // const result = await axios.post(`${Backend_URL}/verify-cookie`, {
+        //   user_flixcart_Id,
+        // });
+        const result = await axios.post(`http://localhost:7070/api/verify-cookie`, {
           user_flixcart_Id,
-        });   
+        })
         const res = result.data;
         if (res.status === "ok" && res.success === true) {
           setIsAuthenticated(true);

@@ -82,7 +82,7 @@ const ProductDetails = () => {
               <AiOutlineShoppingCart className="last-box-prop-icon"  onClick={() => handleAddToCart(item)}/>
               Add to cart
             </button>
-            We Are Taking Out A Feature
+           
              {/* <div className="product-details-info-number">
               <button className="cart-number-btn" onClick={() => handleAddToCart(item)}>+</button> 
               <span>{item.cartQuantity}</span>

@@ -25,25 +25,20 @@ const Cart = () => {
   
   const CheckCookie = async () => {
     const user_flixcart_Id = Cookies.get("user_flixcart_Id");
-    
     try {
       if (user_flixcart_Id !== undefined || null) {
         const result = await axios.post(`${Backend_URL}/verify-cookie`, {
           user_flixcart_Id,
         });
-        
         const res = result.data;
         if (res.status === "ok" && res.success === true) {
           setIsAuthenticated(true);
-         
-        } else {
-          
+        } else {    
           setIsAuthenticated(false);
         }
       }
     } catch (err) {
       console.log(err);
-      
       setIsAuthenticated(false);
     }
   };
