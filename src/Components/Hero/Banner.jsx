@@ -8,7 +8,7 @@ const Banner = () => {
         <Link className="banner-links" to="/">Home</Link>
         <Link className="banner-links" to="/shop">Shop</Link>
         <Link className="banner-links" to="/about-us">About Us</Link>
-        <Link className="banner-links" to="/blog">Blog</Link>
+        <Link className="banner-links" to="https://centuri-blog.netlify.app">Blog</Link>
         <Link className="banner-links" to="/">Contact Us</Link>
       </div>
       <div className="img-wrapper">

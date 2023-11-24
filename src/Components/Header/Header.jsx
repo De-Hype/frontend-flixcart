@@ -100,10 +100,10 @@ const Header = () => {
 
   return (
     <div className="Header">
-      <div className="logo">
+      <Link className="logo" to='/' >
         <AiOutlineShoppingCart className="header-icon" />
         <h4 className="logo-text">FlixCart</h4>
-      </div>
+      </Link>
       <form onSubmit={SearchApi} className="search-bar">
         <input
           type="text"
@@ -186,7 +186,7 @@ const Header = () => {
               </Link>
             </p>
             <p>
-              <Link className="toggle-links" to="/blog">
+              <Link className="toggle-links" to="https://centuri-blog.netlify.app">
                 Blog
               </Link>
             </p>
