@@ -72,9 +72,7 @@ const Header = () => {
         const res = result.data;
         if (res.status === "ok" && res.success === true) {
           setIsAuthenticated(true);
-         
         } else {
-          
           setIsAuthenticated(false);
         }
       }
@@ -122,14 +120,7 @@ const Header = () => {
               <AiOutlineDown className="icon" />
             </span>
           </p>
-          <p className="header-auth-hello-text">
-            Hello 
-            {/* <span>
-               <Link className="link" to="/sign-in">
-                  sign in
-              </Link>
-            </span> */}
-          </p>
+          
         </div>
        
         <Link to="/cart" className="header-wrapper">
