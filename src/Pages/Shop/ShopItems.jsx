@@ -11,12 +11,7 @@ const ShopItems = () => {
   const getProduct = useSelector((state) => state.getProducts);
   const fetchedData = getProduct.fetchedCartItems;
 
-  // Let Us set a value for our new cart quantity here. Each time that the item changes value, we update it here
-
-  // const getValue = JSON.parse(localStorage.getItem("cartItems"))[0].cartQuantity;
-  // localStorage.setItem("quantity", getValue)
-  // console.log(getValue)
-
+  
   useEffect(() => {
     dispatch(getCartItems());
   }, []);
