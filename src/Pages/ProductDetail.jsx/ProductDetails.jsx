@@ -106,7 +106,7 @@ const ProductDetails = () => {
           <ShowProductDetails />
         ) : (
           <div className="no_product_founds">
-            <h4>Invalid Product ID</h4>
+            <h4>Loading...</h4>
           </div>
         )}
       </div>
